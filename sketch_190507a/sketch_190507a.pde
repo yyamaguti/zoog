@@ -138,4 +138,10 @@ abstract class Zoog{
     line(x-10, y+50, x-20, y+60);
     line(x+10, y+50, x+20, y+60);
   }
+  boolean isBallTouch(){
+    if(dist(x, y, b.x, b.y) <= 60 + b.r){
+      return true;
+    }
+    return false;
+  }
 }
