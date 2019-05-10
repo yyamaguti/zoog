@@ -7,9 +7,11 @@ void setup(){
 Easy e = new Easy();
 Normal n = new Normal();
 Hard h = new Hard();
-
+Ball b = new Ball();
 void draw(){
   background(255);
+  b.ell();
+  b.move();
   e.draw_zoog();
   e.move();
   n.draw_zoog();
